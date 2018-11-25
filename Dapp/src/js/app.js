@@ -5,18 +5,18 @@ App = {
   init: async function() {
     // Load pets.
     $.getJSON('../books.json', function(data) {
-      var petsRow = $('#petsRow');
-      var petTemplate = $('#petTemplate');
+      var booksRow = $('#booksRow');
+      var bookTemplate = $('#bookTemplate');
 
       for (i = 0; i < data.length; i ++) {
-        petTemplate.find('.panel-title').text(data[i].title);
-        petTemplate.find('img').attr('src', data[i].picture);
-        petTemplate.find('.pet-breed').text(data[i].publicationyear);
-        petTemplate.find('.pet-age').text(data[i].author);
-        petTemplate.find('.pet-location').text(data[i].publisher);
-        petTemplate.find('.btn-adopt').attr('data-id', data[i].id);
+        bookTemplate.find('.panel-title').text(data[i].title);
+        bookTemplate.find('img').attr('src', data[i].picture);
+        bookTemplate.find('.pub-year').text(data[i].publicationyear);
+        bookTemplate.find('.author').text(data[i].author);
+        bookTemplate.find('.publisher').text(data[i].publisher);
+        bookTemplate.find('.btn-buy').attr('data-id', data[i].id);
         console.log(data[i].authoraddr);
-        petsRow.append(petTemplate.html());
+        booksRow.append(bookTemplate.html());
       }
     });
 
@@ -41,10 +41,10 @@ App = {
     }
     // If no injected web3 instance is detected, fall back to Ganache
     else {
-      App.web3Provider = new Web3.providers.HttpProvider('http://localhost:7545');
+      App.web3Provider = new Web3.providers.HttpProvider('http://127.0.0.1:7545');
     }
     web3 = new Web3(App.web3Provider);
-    
+
     return App.initContract();
   },
 
@@ -62,7 +62,7 @@ App = {
   },
 
   bindEvents: function() {
-    $(document).on('click', '.btn-adopt', App.handleAdopt);
+    $(document).on('click', '.btn-buy', App.handleAdopt);
   },
 
   markAdopted: function(adopters, account) {
