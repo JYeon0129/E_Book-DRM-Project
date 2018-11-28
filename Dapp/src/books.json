@@ -6,7 +6,8 @@
     "publicationyear": 1997,
     "author": "Joanne Kathleen Rowling",
     "publisher": "Moonhak",
-    "authoraddr":"0xeb566f552Df14E916180770088fA818855c74ae5"
+    "authoraddr":"0xeb566f552Df14E916180770088fA818855c74ae5",
+    "buyFlag":"false"
   },
   {
     "id": 1,
@@ -15,7 +16,8 @@
     "publicationyear": 1998,
     "author": "Joanne Kathleen Rowling",
     "publisher": "Moonhak",
-    "authoraddr":"0x150d5fbf142B320aA01416c97e46ccDa95A9Ce48"
+    "authoraddr":"0x150d5fbf142B320aA01416c97e46ccDa95A9Ce48",
+    "buyFlag":"false"
   },
   {
     "id": 2,
@@ -24,7 +26,8 @@
     "publicationyear": 1999,
     "author": "Joanne Kathleen Rowling",
     "publisher": "Moonhak",
-    "authoraddr":"0xcEE0AE4C132f37201b975F5Aca7964fd5E360E5F"
+    "authoraddr":"0xcEE0AE4C132f37201b975F5Aca7964fd5E360E5F",
+    "buyFlag":"false"
   },
   {
     "id": 3,
@@ -33,7 +36,8 @@
     "publicationyear": 2000,
     "author": "Joanne Kathleen Rowling",
     "publisher": "Moonhak",
-    "authoraddr":"0xEB895A3618A550B20f199305fC37Bc727D44A749"
+    "authoraddr":"0xEB895A3618A550B20f199305fC37Bc727D44A749",
+    "buyFlag":"false"
   },
   {
     "id": 4,
@@ -42,7 +46,8 @@
     "publicationyear": 2003,
     "author": "Joanne Kathleen Rowling",
     "publisher": "Moonhak",
-    "authoraddr":"0x68831a07a7F6fc4b3D485EA1989D808Bf4425E0e"
+    "authoraddr":"0x68831a07a7F6fc4b3D485EA1989D808Bf4425E0e",
+    "buyFlag":"false"
   },
   {
     "id": 5,
@@ -51,7 +56,8 @@
     "publicationyear": 2005,
     "author": "Joanne Kathleen Rowling",
     "publisher": "Moonhak",
-    "authoraddr":"0xE9154662e22B7CBB281c4e3a69AAD253BA81684e"
+    "authoraddr":"0xE9154662e22B7CBB281c4e3a69AAD253BA81684e",
+    "buyFlag":"false"
   },
   {
     "id": 6,
@@ -60,7 +66,8 @@
     "publicationyear": 2007,
     "author": "Joanne Kathleen Rowling",
     "publisher": "Moonhak",
-    "authoraddr":"0xE45A7Eb0208655D7C40fbA767E3Cdb533075F524"
+    "authoraddr":"0xE45A7Eb0208655D7C40fbA767E3Cdb533075F524",
+    "buyFlag":"false"
   },
   {
     "id": 7,
@@ -69,6 +76,7 @@
     "publicationyear": 1952,
     "author": "Ernest Miller Hemingway",
     "publisher": "Moonhak",
-    "authoraddr":"0x68831a07a7F6fc4b3D485EA1989D808Bf4425E0e"
+    "authoraddr":"0x68831a07a7F6fc4b3D485EA1989D808Bf4425E0e",
+    "buyFlag":"false"
   }
  ]
