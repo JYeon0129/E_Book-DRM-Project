@@ -34,9 +34,18 @@ App = {
         var buyer = "0xF9c22321C90d0eE01Eba8fB4dBB1f7F40c061F5D";
         console.log(bookName,buyer,bookId);
     })
-
+    $.getJSON('./bookstorage.json', function(data) {
+    
+    for(i=1;i<data.transactions.length;i++){
+     var book=data.transactions[i].record.parameters;
+     console.log(book[0]);
+     console.log(book[1]);
+     console.log(book[2]);
+     console.log(book[3]);
+     console.log(book[4]);
+    }
+  })
   }
-
 };
 
   $(function() {
