@@ -140,15 +140,17 @@ App = {
       console.log(key);
     $.getJSON('./books.json', function(data) {
       bookName = data[bookId].title;
-      buyer = "0xF9c22321C90d0eE01Eba8fB4dBB1f7F40c061F5D";
+      //buyer = "0xF9c22321C90d0eE01Eba8fB4dBB1f7F40c061F5D";
       author=data[bookId].author;
       amount=parseInt(data[bookId].amount);
       console.log(bookName,buyer,bookId,amount);
-      contracts.set(key,bookName,buyer,author,amount,{from : web3.eth.defaultAccount,gas:300000});
+      contracts.set(key,bookName,key,author,amount,{from : web3.eth.defaultAccount,gas:300000});
       console.log(key,bookName,amount);
       var a=contracts.getBookName(key);
       console.log(a.toString(10));
+      $(event.target).text("see");
     });
+
       //contract.set(key,"a","b","c",2000,{from:key,gas:3000000});
       //set을 할 때 어디서 나갈지 주소와 gas 지정해줘야함
   }
