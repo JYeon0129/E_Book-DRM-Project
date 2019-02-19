@@ -1,18 +1,26 @@
+<?php
+  session_start();
+?>
 <html lang="en">
 <head>
     <script src="bower_components/web3/dist/web3.js" charset="utf-8"></script>
-    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-   
     <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-8 col-sm-push-2">
-          <h1 class="text-center">Test BookShop</h1>
+          <h1 class="text-center">Block-Chain Book Shop</h1>
           <hr/>
           <br/>
         </div>
+      </div>
+
+      <div id="user">
+        <h4><?php
+          echo $_SESSION['user_address'];?> 님</h1>
+        <a href="logout.php">로그아웃</a>
+
       </div>
 
       <div id="booksRow" class="row">
@@ -46,6 +54,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/web3.min.js"></script>
+
     <script src="js/app.js"></script>
 
   </body>

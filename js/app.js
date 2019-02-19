@@ -1,9 +1,9 @@
 App = {
   web3Provider: null,
   contracts: {},
-  
+
   init: async function() {
-    
+
   $.getJSON('./books.json', function(data) {
       //petsRow.append(petTemplate.html());
       var booksRow = $('#booksRow');
@@ -17,8 +17,8 @@ App = {
         bookTemplate.find('.btn-buy').attr('data-id', data[i].id);
         booksRow.append(bookTemplate.html());
       }
-      var addres=prompt("address");
-      
+      //var addres=prompt("address");
+
     });
     //return await App.initWeb3();
     return App.bindEvents();
@@ -26,7 +26,7 @@ App = {
   bindEvents: function() {
     $(document).on('click', '.btn-buy', App.handleBuy);
   },
-  
+
   handleBuy: function(event){
     event.preventDefault();
     var bookId = parseInt($(event.target).data('id'));
